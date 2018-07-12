@@ -1,0 +1,66 @@
+/*Color Palate:
+
+#0DAB76 - brighter green w/some aqua blue in it
+#139A43 - brighter/grass green
+#0B5D1E - earthy/darker leaf green
+#053B06 - hunter/deep green
+#000000 - black;*/
+
+body {
+  color: #f0f0f0;
+  margin: 0%;
+}
+
+button {
+  background-color: #139A43;
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+}
+
+h1, h4 {
+  margin: 0%;
+}
+
+header {
+  background-color: #139A43;
+}
+
+header, section {
+/*  border: 0%;
+  margin: 0%;*/
+}
+
+img {
+  color: #0DAB76;
+  display: block;
+  height: 10%;
+  width: 10%;
+}
+
+.blog {
+  background-color: #139A43;
+}
+
+.contact {
+  background-color: #053B06;
+}
+
+.education {
+  background-color: #0B5D1E;
+}
+
+.experience {
+  background-color: #053B06;
+}
+
+.portfolio {
+  background-color: #000000;
+}
+
+.profile {
+  background-color: #0DAB76;
+}
+
+.social-menu {
+  background-color: #000000;
+}
