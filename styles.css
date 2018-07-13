@@ -1,15 +1,7 @@
-/*Color Palate:
-
-#0DAB76 - brighter green w/some aqua blue in it
-#139A43 - brighter/grass green
-#0B5D1E - earthy/darker leaf green
-#053B06 - hunter/deep green
-#000000 - black;*/
-
 body {
   color: #f0f0f0;
   font-family: 'Open Sans', sans-serif;
-  margin: 0%;
+  margin: 0;
 }
 
 button {
@@ -22,29 +14,24 @@ button {
 
 h1 {
   font-weight: 600;
-  margin: 0%;
+  margin: 0;
 }
 
 h4 {
   font-weight: 400;
-  margin: 0%;
+  margin: 0;
 }
 
 header {
   background-color: #139A43;
-  grid-column-start: 1;
+  grid-column: span 2;
+/*  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-header, section {
-/*  border: 0%;
-  margin: 0%;*/
+  grid-row-end: 2;*/
 }
 
 img {
-  color: #0DAB76;
   display: block;
   height: 5%;
   width: 5%;
@@ -56,76 +43,67 @@ p {
 
 .blog {
   background-color: #139A43;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .contact {
   background-color: #053B06;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 
 .education {
   background-color: #0B5D1E;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .experience {
   background-color: #053B06;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
-.images {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
-
-.main-pics {
+/*.main-pics {
   height: 100%;
   width: 100%;
-}
+}*/
 
 .portfolio {
   background-color: #000000;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 
 .profile {
   background-color: #0DAB76;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .social-menu {
   background-color: #000000;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
   height: 100vh;
-  width: 100vw;
+}
+
+.tiles {
+  flex: 6;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+}
+
+.images {
+  flex: 4;
+  background: url('./static-comp-1-original.jpg');
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  
+.images {
+  order: -1;
+  /*grid-template-rows: none;*/
+}
+
+  .wrapper {
+    flex-direction: column;
+  }
+
 }
