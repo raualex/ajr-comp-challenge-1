@@ -1,0 +1,147 @@
+body {
+  color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+button {
+  background-color: #139A43;
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+  font-weight: 400;
+}
+
+
+h1 {
+  font-weight: 600;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 400;
+  height: 26%;
+  margin: 0;
+  margin-bottom: 25px;
+  width: 34%;
+}
+
+header {
+  background-color: #139A43;
+  grid-column: span 2;
+/*  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;*/
+}
+
+img {
+  /*align-self: center;*/
+  display: block;
+  height: 150%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+p {
+  font-weight: 300;
+}
+
+.blog {
+  background-color: #139A43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact {
+  background-color: #053B06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.education {
+  background-color: #0B5D1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.experience {
+  background-color: #053B06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*.main-pics {
+  height: 100%;
+  width: 100%;
+}*/
+
+.portfolio {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile {
+  background-color: #0DAB76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-menu {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.tiles {
+  flex: 6;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+}
+
+.images {
+  flex: 4;
+  background: url('./bunny.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  
+.images {
+  order: -1;
+  background-position: top -50px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  /*grid-template-rows: none;*/
+}
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+}
