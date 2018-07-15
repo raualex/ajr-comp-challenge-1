@@ -25,6 +25,7 @@ Here I have generated a basic site that mocks the comp: a profile for me, offeri
 Image of the Comp: ![alt text](https://raw.githubusercontent.com/raualex/ajr-comp-challenge-1/Beginning-HTML/static-comp-1-original.jpg)
 
 Image of my version: ![alt text](
-https://raw.githubusercontent.com/raualex/ajr-comp-challenge-1/Beginning-HTML/static-comp-1-finished-project.png)
+https://raw.githubusercontent.com/raualex/
+ajr-comp-challenge-1/static-comp-1-finished-project.png)
 
 
