@@ -26,6 +26,6 @@ Image of the Comp: ![alt text](https://raw.githubusercontent.com/raualex/ajr-com
 
 Image of my version: ![alt text](
 https://raw.githubusercontent.com/raualex/
-ajr-comp-challenge-1/static-comp-1-finished-project.png)
+ajr-comp-challenge-1/master/static-comp-1-finished-project.png)
 
 
