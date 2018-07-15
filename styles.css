@@ -8,103 +8,74 @@ button {
   background-color: #139A43;
   border-color: #f0f0f0;
   color: #f0f0f0;
+  display: block;
+  font-size: 1em;
   font-weight: 400;
+  height: 31px;
+  width: 100px;
 }
-
 
 h1 {
   font-weight: 600;
+  display: block;
   margin: 0;
 }
 
 h4 {
+  display: block;
   font-weight: 400;
   height: 26%;
   margin: 0;
-  margin-bottom: 25px;
   width: 34%;
 }
 
 header {
   background-color: #139A43;
+  display: flex;
   grid-column: span 2;
-/*  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em;
 }
 
 img {
-  /*align-self: center;*/
   display: block;
-  height: 150%;
-  margin: 0 auto;
-  width: 90%;
+  height: 50%;
+  margin: 0;
+  width: 35%;
 }
 
 p {
   font-weight: 300;
+  display: block;
 }
 
 .blog {
   background-color: #139A43;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.contact {
-  background-color: #053B06;
+.button-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction : row;
+  justify-content: space-around;
+  width: 225px;
+}
+
+.contact, .experience {
+  background-color: #053B06;
 }
 
 .education {
   background-color: #0B5D1E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.experience {
-  background-color: #053B06;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/*.main-pics {
-  height: 100%;
-  width: 100%;
-}*/
-
-.portfolio {
+.portfolio, .social-menu {
   background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .profile {
   background-color: #0DAB76;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.social-menu {
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .wrapper {
@@ -129,6 +100,34 @@ p {
   width: 100%;
 }
 
+.blog, .contact, .education, .experience, .portfolio, .profile, .social-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+  img {
+  width: 30%;
+}
+
+ .images {
+  order: -1;
+  background-position: top -50px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  /*grid-template-rows: none;*/
+}
+
+  .wrapper {
+    flex-direction: column;
+  } 
+}
+
 @media screen and (max-width: 900px) {
   
 .images {
@@ -143,5 +142,77 @@ p {
   .wrapper {
     flex-direction: column;
   }
-
 }
+
+@media screen and (max-width: 796px) {
+
+  header {
+    grid-column: span 1;
+  }
+
+  .images {
+    height: 300px;
+  }
+
+  .social-menu {
+    font-size: 14px;
+  }
+
+  .tiles {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 555px) {
+
+
+  h4 {
+    display: block;
+    font-weight: 400;
+    height: 0%;
+    margin: 0;
+    width: 34%;
+  }
+
+  img {
+    display: block;
+    height: 50%;
+    margin: 0;
+    width: 27%;
+  }
+
+  .images {
+    order: -1;
+    background-position: top 0px center;
+  }
+
+  .tiles {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .images {
+  order: -1;
+  background-position: top 0px center;
+  }
+}
+
+
+
+
+
+
