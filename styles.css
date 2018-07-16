@@ -85,6 +85,10 @@ p {
   width: 50px;
 }
 
+.left-arrow:hover, .right-arrow:hover {
+  transform: scale(1.1);
+}
+
 .portfolio, .social-menu {
   background-color: #000000;
 }
