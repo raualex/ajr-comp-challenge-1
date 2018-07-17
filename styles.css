@@ -69,6 +69,10 @@ p {
   width: 225px;
 }
 
+.button-icon {
+  display: inline-block;
+}
+
 .contact, .experience {
   background-color: #053B06;
 }
